@@ -1,4 +1,5 @@
-import { useState } from "preact/hooks";
+import { useState } from "react";
+
 
 function ExerciseStart({ handleClick, output, children }) {
   return (
@@ -16,7 +17,7 @@ function ExerciseStart({ handleClick, output, children }) {
       </p>
 
       {output && (
-        <div class="error">
+        <div className="error">
           <p>
             There was a problem checking your function. The error message is:
           </p>
@@ -28,7 +29,7 @@ function ExerciseStart({ handleClick, output, children }) {
         </div>
       )}
 
-      <button onClick={handleClick} class="button">
+      <button onClick={handleClick} className="button">
         Test Your Function
       </button>
     </>

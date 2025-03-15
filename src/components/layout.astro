@@ -1,4 +1,5 @@
 ---
+import Header from "./header/header.astro";
 const { title, description, home = false } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -176,17 +177,7 @@ const { title, description, home = false } = Astro.props;
   </style>
 </head>
 <body>
-  <header class="container">
-    <h1 class="heading">{title}</h1>
-
-    <p class="description">{description}</p>
-
-    {home !== true && (
-      <p>
-        <a href="/">&larr; back to home</a>
-      </p>
-    )}
-  </header>
+  <Header />
 
   <slot />
 

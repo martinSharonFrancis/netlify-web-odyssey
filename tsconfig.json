@@ -1,3 +1,18 @@
 {
-  "moduleResolution": "node"
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "outDir": "./dist", // Store compiled files in a separate folder
+    "rootDir": "./", // Keep source files in the current directory
+    "allowJs": true,
+    "strict": true,
+    "module": "ESNext",
+    "target": "ESNext",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src", "astro.config.ts"], // Ensure config file is included
+  "exclude": ["node_modules", "dist"] // Ignore compiled files
 }
