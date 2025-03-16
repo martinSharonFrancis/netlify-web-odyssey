@@ -1,16 +1,24 @@
 ---
-import HeaderClient from './client';
+import style from './header.module.scss';
 ---
-<header>
-    <HeaderClient name='hello from astro' client:load />
-    <div class="container">
-        <div class="wraper py-3 flex items-center justify-around">
-            <a href="#" class="logo font-bold italic">Logo</a>
-            <ul class="nav flex items-center gap-2">
-                <li><a href="/about-us">About us</a></li>
-                <li><a href="/about-us">Projects</a></li>
-                <li><a href="/about-us">Specialized In</a></li>
-            </ul>        
-        </div>
-    </div>    
+
+<header class={`header ${style.header}`}>
+  <!-- <HeaderClient name='hello from astro' client:load /> -->
+  <div class="container m-auto">
+    <div class="heade_wrap">
+      <a href="/" class="logo"
+        ><img src="/public/images/site-logo.png" alt="logo" /></a
+      >
+      <div class="right">
+        <ul class="navs">
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Portfolio</a></li>
+        </ul>
+        <button class="cnt_btn">
+          <span>CONTACT ME</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </header>

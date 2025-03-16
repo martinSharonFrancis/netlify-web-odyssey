@@ -1,0 +1,12 @@
+.footer{
+    background-color: var(--clr_drk0);
+    padding: 3.75rem 0 3.125rem;
+    *{
+        color: #fff;
+    }
+    & :global(.footer_contents){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

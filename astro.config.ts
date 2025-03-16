@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: "https://feature-tour.netlify.app", // Required for sitemap to work
-  integrations: [react(), sitemap(), tailwind()]
+  integrations: [react(), sitemap(), tailwind()],
 });

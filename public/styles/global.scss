@@ -1,0 +1,35 @@
+:root {
+  --clr_drk0: #0b0b0b;
+  --clr_gray0: #d7d7d7;
+
+  //  fonts
+  --font_primary: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: var(--clr_drk0);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.45;
+  margin: 0;
+  padding: 0;
+}
+
+.cnt_btn {
+  min-width: 147px;
+  height: 46px;
+  line-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: var(--clr_drk0) !important;
+  font-weight: bold;
+  border-radius: 1.875rem;
+  padding: 0 .625rem;
+}

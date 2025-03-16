@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "outDir": "./dist", // Store compiled files in a separate folder
     "rootDir": "./", // Keep source files in the current directory
@@ -11,7 +11,8 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": ["astro/client"]
   },
   "include": ["src", "astro.config.ts"], // Ensure config file is included
   "exclude": ["node_modules", "dist"] // Ignore compiled files
