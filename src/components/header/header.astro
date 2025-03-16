@@ -1,0 +1,24 @@
+---
+import style from './header.module.scss';
+---
+
+<header class={`header ${style.header}`}>
+  <!-- <HeaderClient name='hello from astro' client:load /> -->
+  <div class="container m-auto">
+    <div class="heade_wrap">
+      <a href="/" class="logo"
+        ><img src="/public/images/site-logo.png" alt="logo" /></a
+      >
+      <div class="right">
+        <ul class="navs">
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Portfolio</a></li>
+        </ul>
+        <button class="cnt_btn">
+          <span>CONTACT ME</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

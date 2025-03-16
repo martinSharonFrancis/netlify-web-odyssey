@@ -1,0 +1,35 @@
+---
+import styles from './footer.module.scss';
+---
+
+<footer class={`footer ${styles.footer}`}>
+  <div class="container m-auto">
+    <div class="footer_contents gap-12">
+      <button class="back_top flex flex-col items-center gap-2">
+        <img src="/images/double-arrow-up.svg" alt="icon" />
+        <span>BACK TO TOP</span>
+      </button>
+      <ul class="social_contents flex items-center gap-3">
+        <li>
+          <a href="#"><img src="/images/facebook-icon.svg" alt="fb" /></a
+          >
+        </li>
+        <li>
+          <a href="#"><img src="/images/insta-icon.svg" alt="insta" /></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img src="/images/linkedin-icon.svg" alt="linkedIn" /></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img src="/images/email-icon.svg" alt="linkedIn" /></a
+          >
+        </li>
+      </ul>
+      <p class="cpy_right">@2020 Tomasz Gajda All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,51 @@
+.header {
+  padding: 0.625rem 0;
+  background-color: var(--clr_gray0);
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background-color: var(--clr_drk0);
+    clip-path: polygon(2% 0, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 0;
+  }
+  
+  & :global(.heade_wrap) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    & :global(.logo) {
+      max-width: 3.125rem;
+    }
+    & :global(.right) {
+      display: flex;
+      align-items: center;
+      gap: 4.0625rem;
+
+      & :global(.navs) {
+        display: flex;
+        align-items: center;
+        gap: 4.0625rem;
+        *{
+            color: #fff;
+        }
+        &>li{
+            a{
+                font-weight: bold;
+            }
+        }
+      }
+    }
+  }
+
+  & :global(.container){
+    max-width: 1360px;
+  }
+}

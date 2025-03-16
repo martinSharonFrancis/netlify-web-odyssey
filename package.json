@@ -9,9 +9,18 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/preact": "^1.0.2",
     "@astrojs/sitemap": "^1.0.0",
     "@netlify/netlify-marketing-tokens": "^1.1.0",
-    "astro": "^2.0.0"
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "astro": "^5.5.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.1",
+    "@astrojs/tailwind": "^6.0.0",
+    "@netlify/functions": "^3.0.1",
+    "sass": "^1.85.1",
+    "tailwindcss": "^3.4.17"
   }
 }
